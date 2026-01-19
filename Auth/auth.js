@@ -1,7 +1,5 @@
 function login(username, password) {
   if (!username || !password) return false;
-
-  console.log("Password:", password);
-
+  if (username.length < 4) return false;
   return password.length >= 8;
 }
